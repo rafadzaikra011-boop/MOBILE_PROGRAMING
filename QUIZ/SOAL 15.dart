@@ -1,0 +1,1 @@
+//1. konsep dart yang paling mudah dipahami : deklarasi variatipe data dasar (seperti String, int, dan bool), serta operasi aritmatika sederhana.
