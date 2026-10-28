@@ -1,0 +1,12 @@
+{
+  "dart.flutterSdkPath": "D:\\MOBILE_PROGRAMING\\flutter\\flutter",
+  "dart.analysisExcludedFolders": [
+    "D:\\MOBILE_PROGRAMING\\flutter\\flutter"
+  ],
+  "files.exclude": {
+    "**/flutter": true
+  },
+  "search.exclude": {
+    "**/flutter": true
+  }
+}
