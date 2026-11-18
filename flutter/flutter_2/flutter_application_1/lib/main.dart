@@ -4,11 +4,16 @@ import 'package:provider/provider.dart';
 import 'counter/menghitung_provider.dart';
 import 'page_2.dart';
 import 'page_3.dart';
+import 'studi kasus/katalog_page.dart';
+import 'studi kasus/keranjang_page.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => HitungProvider(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => HitungProvider()),
+        ChangeNotifierProvider(create: (context) => KeranjangProvider()),
+      ],
       child: const MyApp(),
     ),
   );
@@ -22,8 +27,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => const Page2(),
+        '/': (context) => const KatalogPage(),
+        '/page2': (context) => const Page2(),
         '/page3': (context) => const Page3(),
+        '/keranjang': (context) => const KeranjangPage(),
       },
       initialRoute: '/',
     );
